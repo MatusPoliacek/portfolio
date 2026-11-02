@@ -3,33 +3,147 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="description" content="Portfólio Matusa Poliacka, dizajnéra a tvorcu digitálnych produktov.">
+  <meta name="theme-color" content="#000000">
+  <title>Matus Poliacek — digitálne portfólio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Hlavná navigácia">
+      <a class="wordmark" href="#domov" aria-label="Matus Poliacek, domov">
+        <span class="wordmark-icon" aria-hidden="true">MP</span>
+        <span>matuspoliacek<span class="wordmark-dot">.</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#projekty">Projekty</a>
+        <a href="#o-mne">O mne</a>
+        <a class="nav-contact" href="#kontakt">Napíšte mi <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
 
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
+  <main>
+    <section class="hero shell" id="domov" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Dizajn · Vývoj · Digitálne produkty</p>
+        <h1 id="hero-title">Ahoj, som<br><span class="hero-name">Matus Poliacek<span class="green-dot">.</span></span></h1>
+        <p class="hero-description">Navrhujem digitálne zážitky, ktoré spájajú premyslený dizajn s tým, čo ľudia naozaj potrebujú.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projekty">Pozrieť projekty <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#o-mne">Viac o mne <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="hero-art reveal" aria-label="Abstraktná kompozícia značky Matus Poliacek">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-cross cross-one" aria-hidden="true">+</div>
+        <div class="art-cross cross-two" aria-hidden="true">+</div>
+        <div class="art-core"><span>M</span><i></i></div>
+        <span class="art-label">TVORÍM S ÚMYSLOM</span>
+        <span class="art-coordinate">48°08' N<br>17°06' E</span>
+      </div>
+      <a class="scroll-cue" href="#projekty"><span class="scroll-line"></span> Posuňte sa nižšie</a>
+    </section>
 
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
-    </div>
+    <section class="projects section shell" id="projekty" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">VÝBER Z TVORBY <span class="heading-rule"></span></p>
+          <h2 id="projects-title">Projekty<span class="green-dot">.</span></h2>
+        </div>
+        <p class="section-note">Nápady, ktoré sa zmenili na<br>niečo skutočné.</p>
+      </div>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-visual visual-fintrack" aria-hidden="true">
+            <div class="app-window finance-window">
+              <div class="mock-top"><span class="mock-mark">f.</span><span class="mock-menu">•••</span></div>
+              <p class="mock-caption">CELKOVÝ ZOSTATOK</p>
+              <p class="mock-total">4 280,50 <span>€</span></p>
+              <div class="mock-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="mock-footer"><span>Január</span><span>Február</span><span>Marec</span></div>
+            </div>
+            <span class="visual-index">01 / 03</span>
+          </div>
+          <div class="project-meta">
+            <div><p class="project-type">Produktový dizajn · 2025</p><h3>Fintrack</h3></div>
+            <a class="project-arrow" href="#kontakt" aria-label="Opýtať sa na projekt Fintrack">↗</a>
+          </div>
+          <p class="project-description">Osobné financie prehľadne. Aplikácia, ktorá mení plánovanie rozpočtu na dobrý zvyk.</p>
+          <ul class="tag-list" aria-label="Technológie a zameranie"><li>UX/UI</li><li>Figma</li><li>Fintech</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual visual-northstar" aria-hidden="true">
+            <div class="northstar-wordmark">NORTH<span>STAR</span></div>
+            <div class="northstar-sun"></div>
+            <div class="northstar-horizon"></div>
+            <p class="northstar-caption">NÁJDITE SI SVOJ SEVER</p>
+            <span class="visual-index">02 / 03</span>
+          </div>
+          <div class="project-meta">
+            <div><p class="project-type">Web · 2024</p><h3>Northstar</h3></div>
+            <a class="project-arrow" href="#kontakt" aria-label="Opýtať sa na projekt Northstar">↗</a>
+          </div>
+          <p class="project-description">Digitálny domov značky, ktorá pomáha ľuďom vyraziť za dobrodružstvom.</p>
+          <ul class="tag-list" aria-label="Technológie a zameranie"><li>Web dizajn</li><li>Branding</li><li>Webflow</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual visual-forma" aria-hidden="true">
+            <div class="forma-top"><span>FORMA</span><span>STUDIO / 25</span></div>
+            <div class="forma-layout">
+              <div class="forma-type">Priestor<br>pre nový<br><span>začiatok.</span></div>
+              <div class="forma-shape shape-large"></div>
+              <div class="forma-shape shape-small"></div>
+            </div>
+            <span class="visual-index">03 / 03</span>
+          </div>
+          <div class="project-meta">
+            <div><p class="project-type">Identita · 2024</p><h3>Forma Studio</h3></div>
+            <a class="project-arrow" href="#kontakt" aria-label="Opýtať sa na projekt Forma Studio">↗</a>
+          </div>
+          <p class="project-description">Vizuálna identita a web pre architektonické štúdio s citom pre detail.</p>
+          <ul class="tag-list" aria-label="Technológie a zameranie"><li>Identita</li><li>Art direction</li><li>Web</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="o-mne" aria-labelledby="about-title">
+      <div class="about-inner shell">
+        <div class="about-heading reveal">
+          <p class="eyebrow">PÁR SLOV O MNE <span class="heading-rule"></span></p>
+          <h2 id="about-title">Dobrý dizajn<br>začína <span class="green-text">počúvaním.</span></h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>Som dizajnér a tvorca digitálnych produktov z Bratislavy. Zložité veci rád mením na jednoduché a užitočné zážitky.</p>
+          <p>Verím v otvorenú spoluprácu, premyslené detaily a riešenia, ktoré fungujú aj dlho po odovzdaní projektu.</p>
+          <div class="about-facts">
+            <div><strong>5<span>+</span></strong><span>rokov skúseností</span></div>
+            <div><strong>18</strong><span>odovzdaných projektov</span></div>
+            <div><strong>100<span>%</span></strong><span>zvedavosť</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer shell" id="kontakt">
+      <div class="footer-main reveal">
+        <div>
+          <p class="eyebrow">MÁTE NIEČO NA MYSLI?</p>
+          <h2>Poďme to<br><span class="green-text">vymyslieť.</span></h2>
+        </div>
+        <a class="button button-primary footer-cta" href="mailto:matus.poliacek@example.com">matus.poliacek@example.com <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-bottom">
+        <a class="wordmark" href="#domov" aria-label="Matus Poliacek, späť na začiatok"><span class="wordmark-icon" aria-hidden="true">MP</span><span>matuspoliacek<span class="wordmark-dot">.</span></span></a>
+        <p>Navrhnuté s rozumom a citom <span class="green-dot">.</span></p>
+        <p>© <span id="current-year">2025</span> Matus Poliacek</p>
+      </div>
+    </footer>
   </main>
-
 </body>
 </html>
